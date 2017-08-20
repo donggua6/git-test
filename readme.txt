@@ -1,3 +1,3 @@
 
 1,smaster modify master add2
-,smaster modify dev add
+,smaster modify dev add ,master add2...
