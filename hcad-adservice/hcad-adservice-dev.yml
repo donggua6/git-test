@@ -1,0 +1,17 @@
+c3p0:
+  datasource:
+    definitions:
+      -
+        jdbcUrl: jdbc:mysql://127.0.0.1:3306/huichuan_ad2?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=round&autoReconnect=true
+        user: root
+        password:
+        driverClass: com.mysql.jdbc.Driver
+        acquireIncrement: 3
+        initialPoolSize: 3
+        maxPoolSize: 15
+        minPoolSize: 3
+        maxIdleTime: 600
+        maxIdleTimeExcessConnections: 1800
+        checkoutTimeout: 6000
+        preferredTestQuery: select 1
+        idleConnectionTestPeriod: 600

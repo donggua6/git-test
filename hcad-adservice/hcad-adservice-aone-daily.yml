@@ -1,0 +1,29 @@
+c3p0:
+  datasource:
+    definitions:
+      -
+        jdbcUrl: jdbc:mysql://11.251.207.160:3308/huichuan_ad2?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=round&autoReconnect=true
+        user: admin
+        password: 3tdnk2Z1Ak
+        driverClass: com.mysql.jdbc.Driver
+        acquireIncrement: 3
+        initialPoolSize: 3
+        maxPoolSize: 15
+        minPoolSize: 3
+        maxIdleTime: 600
+        maxIdleTimeExcessConnections: 1800
+        checkoutTimeout: 6000
+        preferredTestQuery: select 1
+        idleConnectionTestPeriod: 600
+
+eureka:
+  server:
+    urls: http://hetu-eureka-daily01.alibaba.net/eureka,http://hetu-eureka-daily02.alibaba.net/eureka
+	
+idgenerator:
+  rpc:
+    address: 11.251.214.135:20880,11.251.208.54:20880
+	
+account:
+  rpc:
+    address: 11.251.214.137:25351

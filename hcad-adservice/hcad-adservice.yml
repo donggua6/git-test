@@ -1,0 +1,26 @@
+server:
+  port: 25061
+
+spring:
+  application:
+    name: hcad-adservice
+  jackson:
+    time-zone: GMT+8
+
+c3p0:
+  datasource:
+    driverClass: com.mysql.jdbc.Driver
+    acquireIncrement: 3
+    initialPoolSize: 3
+    maxPoolSize: 15
+    minPoolSize: 3
+    maxIdleTime: 600
+    maxIdleTimeExcessConnections: 1800
+    checkoutTimeout: 6000
+    preferredTestQuery: select 1
+    idleConnectionTestPeriod: 600
+
+hetu:
+  rpc:
+    timeout: 15000
+    port: 25329
