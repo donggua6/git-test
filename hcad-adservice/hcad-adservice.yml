@@ -1,5 +1,18 @@
-server:
-  port: 25061
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      base-path: /admin
+	  exposure:
+	    include: '*'
+  endpoint:
+    health:
+      show-details: always
+endpoints:
+  loggers:
+    enabled: true
+    sesitive: false
 
 spring:
   application:
